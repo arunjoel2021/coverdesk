@@ -1,0 +1,104 @@
+git config --global user.email "arunjoel2021@gmail.com"
+git config --global user.name "Arun Joel"
+
+
+GMAIL
+Email : arunjoel2021@gmail.com
+Password : ASdf!@34
+
+GITHUB
+Login : arunjoel2021
+Email : arunjoel2021@gmail.com
+Password : M45Pac3!@#
+Token : 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
+
+AWS Account Details 
+Email : arunjoel2021@gmail.com
+Password : ASdf!@34
+
+
+
+
+-===============================================================
+GIT COMMANDS
+===========================
+git remote set-url origin https://github.com/arunjoel2021/coverdesk.git
+
+git init 
+git config --global user.email "arunjoel2021@gmail.com"
+git config --global user.name "Arun Joel"
+git remote set-url origin https://github.com/arunjoel2021/coverdesk.git
+git add .
+git commit -m "second commit"
+git push -u origin main
+
+
+===============================================================
+7Zip
+===========================
+Link : https://linuxhint.com/install-7zip-compression-tool-on-ubuntu/
+
+sudo apt-get install p7zip-full
+7z a data.7z data.txt  || a : archive
+7z e data.7z  || e : extract
+
+
+===============================================================
+epel for amazon
+===========================
+7zip 
+
+sudo amazon-linux-extras install epel -y
+sudo yum install p7zip p7zip-plugins -y
+
+
+https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
+
+conda install -c conda-forge selenium
+conda install -c conda-forge/label/gcc7 selenium
+conda install -c conda-forge/label/cf201901 selenium
+conda install -c conda-forge/label/cf202003 selenium
+
+
+==============================================================
+installing chrome 
+===========================
+/etc/yum.repos.d/google-chrome.repo
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+
+
+===============================================================
+Rename while downloading 
+===========================
+https://www.geeksforgeeks.org/linux-renaming-file-while-downloading-with-wget/
+
+wget  -cO   - https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > miniconda.sh
+
+sh miniconda.sh -u -b -p /proj/installs/
+
+export PATH="/proj/installs/bin:$PATH"
+source ~/.bashrc  #Ubuntu
+source ~/.
+
+===============================================================
+Sending email via python
+===========================
+https://www.interviewqs.com/blog/py-email
+https://www.youtube.com/watch?v=JRCJ6RtE3xU
+https://towardsdatascience.com/automate-sending-emails-with-gmail-in-python-449cc0c3c317   -- Working
+
+App Password : pivsznfoqhzgkvko
+
+
+===============================================================
+tar commands
+===========================
+tar -cvf samplename.tar <folder or file locations>
+tar -xvf samplename.tar <extraction directory location>
+
+===============================================================
