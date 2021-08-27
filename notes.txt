@@ -2,23 +2,6 @@ git config --global user.email "arunjoel2021@gmail.com"
 git config --global user.name "Arun Joel"
 
 
-GMAIL
-Email : arunjoel2021@gmail.com
-Password : ASdf!@34
-
-GITHUB
-Login : arunjoel2021
-Email : arunjoel2021@gmail.com
-Password : M45Pac3!@#
-Token : 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
-
-AWS Account Details 
-Email : arunjoel2021@gmail.com
-Password : ASdf!@34
-
-
-
-
 -===============================================================
 GIT COMMANDS
 ===========================
@@ -91,8 +74,6 @@ Sending email via python
 https://www.interviewqs.com/blog/py-email
 https://www.youtube.com/watch?v=JRCJ6RtE3xU
 https://towardsdatascience.com/automate-sending-emails-with-gmail-in-python-449cc0c3c317   -- Working
-
-App Password : pivsznfoqhzgkvko
 
 
 ===============================================================

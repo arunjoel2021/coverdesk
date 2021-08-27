@@ -1,7 +1,7 @@
 import yagmail
 
 user = 'arunjoel2021@gmail.com'
-app_password = 'pivsznfoqhzgkvko' # a token for gmail
+app_password = 'trycallingme' # a token for gmail
 to = 'arunjoel2021@gmail.com'
 
 subject = 'test subject 1'
