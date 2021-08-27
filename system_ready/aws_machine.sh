@@ -1,28 +1,55 @@
-#install required softwares 
-sudo yum install httpd -y           # WEBSERVICE
-sudo yum install python3 -y         # Python 3
-sudo yum install git -y             # GIT
+#########################################################
+###                                                   ###
+###                 INSTALLS                          ###
+###                                                   ###
+#########################################################
+# WEBSERVICE , PYTHON3, GIT, VIM, WGET, 
 
+sudo yum install httpd python3 git -y
 
-#start services
-sudo systemctl status httpd
+#########################################################
+###                                                   ###
+###                SERVICES SETUP                     ###
+###                                                   ###
+#########################################################
+#httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
 
+#########################################################
+###               DIRECTORIES                         ###
+###               & PERMISSIONS                       ###
+###                                                   ###
+#########################################################
 
-#Create Required Directories & Set Permissions
 sudo mkdir /proj
 sudo chmod 777 /proj
+sudo mkdir /proj/installs coverdesk
+chmod 777 /proj/installs coverdesk
 
-sudo mkdir /proj/installs/
-chmod 777 /proj/installs/
-
-apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
-#yum install libXcomposite libXcursor libXi libXtst libXrandr alsa-lib mesa-libEGL libXdamage mesa-libGL libXScrnSaver
+#Python Packages 
+#apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+#sudo yum install libXcomposite libXcursor libXi libXtst libXrandr alsa-lib mesa-libEGL libXdamage mesa-libGL libXScrnSaver -y
 
 
-#cd /proj/installs/
-#wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /proj/installs/miniconda.sh
-#chmod 777 miniconda.sh
-#sh miniconda.sh -u -b -p /proj/installs/
-#conda install -c anaconda django
+#########################################################
+###                                                   ###
+###               MINICONDA SETUP                     ###
+###                                                   ###
+#########################################################
 
-#Install Anaconda
+wget -cO - https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > /proj/miniconda.sh
+chmod 777 /proj/miniconda.sh
+sh /proj/miniconda.sh -u -b -p /proj/installs/
+
+#Source Bash 
+export PATH="/proj/installs/bin:$PATH"
+source ~/.bashrc
+
+#########################################################
+###                                                   ###
+###               SYSTEM RESTART                      ###
+###                                                   ###
+#########################################################
+sudo init 6
+
